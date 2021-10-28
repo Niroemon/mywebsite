@@ -8,22 +8,68 @@
     <title>Genshin Impact</title>
 </head>
 <body>
-<header class="main-header">
-    <a href="/" class="brand-logo">
-        <img src="brand-logo.png">
-    </a>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Characters</a></li>
-            <li><a href="">Explore</a></li>
-            <li><a href="">More</a></li>
-        </ul>
-    </nav>
-</header>
-    
-            
+<section class="showcase">
+    <header>   
+        <h2 class="logo"><a href='#'>
+            <img src="brand-logo.png">
+        </a></h2>
+        <div class="toggle"></div>
+    </header>
+
+    <video src=mainvideo.mp4 muted loop autoplay></video>
+        
+    <div class="overlay"></div>
+        
+    <div class="text">
+            <h2>Welcome</h2>
+            <h3>to Genshin Impact</h3>
+            <p></p>
+            <a href="#">Explore the world</a>
+        </div>
+    <ul class="social">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>
+</section>
+<div class="menu">
+    <ul class="mainlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Characters</a>
+            <ul class="smallist1">
+                <li><a href="#">Mondstadt</a></li>
+                <li><a href="#">Liyue</a></li>
+                <li><a href="#">Inazuma</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Explore</a>
+            <ul class="smallist2">
+                <li><a href="#">About Game</a></li>
+                <li><a href="#">Teyvat</a></li>
+                <li><a href="#">Itinerary</a></li>
+                <li><a href="#">Manga</a></li>
+            </ul>
+        </li>
+        <li><a href="#">More</a>
+            <ul class="smallist3">
+                <li><a href="#">HoYoLAB</a></li>
+                <li><a href="#">TOP-UP</a></li>
+                <li><a href="#">REDEEM CODE</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+    })
+</script>            
 
 </body>
 </html>
